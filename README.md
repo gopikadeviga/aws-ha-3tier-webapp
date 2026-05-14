@@ -43,6 +43,40 @@ RDS: MySQL 8.0, db.t3.micro, automated backups
 ALB: Internet-facing, multi-AZ, ELB health checks
 CloudFront: Dual-origin (S3 static + ALB dynamic)
 
+## SCREENSHOTS
+
+### Live Portfolio on CloudFront
+
+<img width="924" height="1017" alt="02-protfolio-live" src="https://github.com/user-attachments/assets/30de16fa-64ef-4306-a5d8-d83d443964fa" />
+
+### Target Group — Healthy Instances
+
+<img width="1369" height="660" alt="03-target-group" src="https://github.com/user-attachments/assets/883d9144-7b29-40a9-94db-a44feb6f7e1d" />
+
+### Auto Scaling Group Activity
+
+<img width="1201" height="788" alt="04-asg-activity" src="https://github.com/user-attachments/assets/7950942a-3d89-4db8-a514-6750a942d66d" />
+
+### CloudWatch Alarms Dashboard
+
+<img width="790" height="339" alt="05-cloudwatch-alarms" src="https://github.com/user-attachments/assets/248ea497-d2e5-4f57-b28e-d0b9f556cc3b" />
+
+### VPC Flow Logs — Active Streams
+
+<img width="1066" height="419" alt="06-vpc-flow-logs" src="https://github.com/user-attachments/assets/2caf40c0-ef67-4272-802b-dc0d1589cfee" />
+
+### RDS Database 
+
+<img width="1060" height="420" alt="07-rds-database-c s" src="https://github.com/user-attachments/assets/a4f2000c-cae3-42b1-8259-de07c2c07bcc" />
+
+### RDS Database Configuration
+
+<img width="1032" height="609" alt="07-rds-database-config" src="https://github.com/user-attachments/assets/9efd4c57-1798-4ce8-a060-e7e5ef63168d" />
+
+### Application Load Balancer
+
+<img width="1503" height="322" alt="08-alb-details" src="https://github.com/user-attachments/assets/28c79f68-6a00-484f-bd29-7ff1bea4d7cf" />
+
 ## WHAT I LEARNED
 
 - Designing HA architecture across multiple AZs
