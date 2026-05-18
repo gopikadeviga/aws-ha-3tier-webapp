@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Gopika Devi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .contact-intro {
+      font-size: 15px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .contact-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      transition: all var(--transition);
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .contact-card:hover {
+      border-color: var(--aws-orange);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-md);
+      background: var(--gray-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-label {
+      font-size: 11px;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 3px;
+    }
+
+    .contact-val {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+      word-break: break-all;
+    }
+
+    .availability-banner {
+      background: var(--teal-light);
+      border: 1px solid #9FE1CB;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .availability-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--teal);
+      margin-top: 5px;
+      flex-shrink: 0;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(29, 158, 117, 0.4); }
+      50% { box-shadow: 0 0 0 6px rgba(29, 158, 117, 0); }
+    }
+
+    .availability-text strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--teal-dark);
+      margin-bottom: 4px;
+    }
+
+    .availability-text p {
+      font-size: 13px;
+      color: var(--teal-dark);
+      line-height: 1.6;
+    }
+
+    @media (max-width: 480px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Gopika <span>Devi</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <header class="page-header fade-up">
+        <h1>Get in Touch</h1>
+        <div class="accent-line"></div>
+        <p>Open to new opportunities in cloud and solutions architecture</p>
+      </header>
+
+      <!-- Availability banner -->
+      <div class="availability-banner fade-up fade-up-delay-1">
+        <div class="availability-dot"></div>
+        <div class="availability-text">
+          <strong>Available for opportunities</strong>
+          <p>Open to roles as a Solutions Architect, Cloud Engineer, or Cloud Operations professional. Based in Dubai, UAE — open to remote and hybrid roles.</p>
+        </div>
+      </div>
+
+      <p class="contact-intro fade-up fade-up-delay-1">
+        Feel free to reach out via email or connect with me on LinkedIn. I'm always happy to chat about cloud architecture, AWS, or potential opportunities.
+      </p>
+
+      <!-- Contact cards -->
+      <div class="contact-grid fade-up fade-up-delay-2">
+
+        <a class="contact-card" href="mailto:gopikadeviga@gmail.com">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aws-orange)" stroke-width="1.8">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-val">gopikadeviga@gmail.com</div>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://www.linkedin.com/in/gopikadevi/" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aws-orange)" stroke-width="1.8">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-val">linkedin.com/in/gopikadevi</div>
+          </div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/gopikadeviga" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aws-orange)" stroke-width="1.8">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">GitHub</div>
+            <div class="contact-val">github.com/gopikadeviga</div>
+          </div>
+        </a>
+
+        <div class="contact-card" style="cursor: default;">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--aws-orange)" stroke-width="1.8">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-val">Dubai, UAE</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Gopika Devi &nbsp;·&nbsp; <a href="mailto:gopikadeviga@gmail.com">gopikadeviga@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>

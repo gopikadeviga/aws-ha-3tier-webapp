@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills – Gopika Devi</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-group {
+      background: var(--bg-white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .skill-group:hover {
+      border-color: var(--aws-blue);
+      box-shadow: var(--shadow-md);
+    }
+
+    .skill-group-icon {
+      font-size: 24px;
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-group-title {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+
+    .skill-group-desc {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .cert-banner {
+      background: linear-gradient(135deg, #eeffff 0%, #e0fbff 100%);
+      border: 1px solid #b2edff;
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .cert-banner h2 {
+      font-size: 14px;
+      font-weight: 500;
+      color: #050711;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .cert-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .cert-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      background: white;
+      border: 1px solid #b2e9ff;
+      border-radius: var(--radius-xl);
+      padding: 7px 14px;
+      font-size: 12px;
+      font-weight: 500;
+      color: #000002;
+    }
+
+    .cert-item::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--aws-black);
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">Gopika <span>Devi</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <header class="page-header fade-up">
+        <h1>Skills &amp; Tools</h1>
+        <div class="accent-line"></div>
+        <p>Technologies and platforms I work with</p>
+      </header>
+
+      <!-- Certifications Banner -->
+      <div class="cert-banner fade-up fade-up-delay-1">
+        <h2>AWS Certifications</h2>
+        <div class="cert-list">
+          <div class="cert-item">AWS Certified Solutions Architect – Associate</div>
+          <div class="cert-item">AWS Certified Cloud Practitioner (CLF-C02)</div>
+          <div class="cert-item">AWS re/Start Graduate</div>
+          <div class="cert-item">AWS Cloud Quest – Cloud Practitioner</div>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="skills-grid fade-up fade-up-delay-2">
+
+        <div class="skill-group">
+          <div class="skill-group-icon">☁️</div>
+          <div class="skill-group-title">AWS Core Services</div>
+          <div class="skill-group-desc">Primary cloud platform</div>
+          <div class="pills-group">
+            <span class="pill">EC2</span>
+            <span class="pill">S3</span>
+            <span class="pill">IAM</span>
+            <span class="pill">VPC</span>
+            <span class="pill">RDS</span>
+            <span class="pill">CloudWatch</span>
+            <span class="pill">CloudFront</span>
+            <span class="pill">AWS Management Console</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🏗️</div>
+          <div class="skill-group-title">Cloud Architecture</div>
+          <div class="skill-group-desc">Design patterns &amp; best practices</div>
+          <div class="pills-group">
+            <span class="pill">High Availability</span>
+            <span class="pill">Scalable Design</span>
+            <span class="pill">Cost Optimisation</span>
+            <span class="pill">Cloud Security</span>
+            <span class="pill">Cloud Storage</span>
+            <span class="pill">Fault Tolerance</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">💻</div>
+          <div class="skill-group-title">Programming</div>
+          <div class="skill-group-desc">Languages &amp; frameworks</div>
+          <div class="pills-group">
+            <span class="pill">Python</span>
+            <span class="pill">Java</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">Full Stack Development</span>
+            <span class="pill">Java Full-Stack</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🗄️</div>
+          <div class="skill-group-title">Data &amp; Databases</div>
+          <div class="skill-group-desc">Storage &amp; data management</div>
+          <div class="pills-group">
+            <span class="pill">MySQL</span>
+            <span class="pill">DBMS</span>
+            <span class="pill">Amazon RDS</span>
+            <span class="pill">Database Design</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">🤖</div>
+          <div class="skill-group-title">AI &amp; Emerging Tech</div>
+          <div class="skill-group-desc">Applied AI development</div>
+          <div class="pills-group">
+            <span class="pill">AI/ML Basics</span>
+            <span class="pill">AI Application Dev</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-icon">📚</div>
+          <div class="skill-group-title">Continuous Learning</div>
+          <div class="skill-group-desc">Platforms &amp; assessments</div>
+          <div class="pills-group">
+            <span class="pill">AWS Skill Builder</span>
+            <span class="pill">LinkedIn Learning</span>
+            <span class="pill">Python Assessment ✓</span>
+            <span class="pill">HTML Assessment ✓</span>
+            <span class="pill">CSS Assessment ✓</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Gopika Devi &nbsp;·&nbsp; <a href="mailto:gopikadeviga@gmail.com">gopikadeviga@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js"></script>
+</body>
+</html>
