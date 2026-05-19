@@ -23,7 +23,7 @@ Cloud-Native Highly Available 3-Tier  Web Application - AWS
 | CDN | CloudFront, S3 | Global static delivery |
 | Monitor | CloudWatch, SNS | Alerts + observability |
 | Audit | VPC Flow Logs, Config | Security + compliance |
-| Backup | AWS Backup | Automated DR |
+| Backup | AWS Backup | Automated DR(tested) |
 
 ## KEY DESIGN DECISIONS
 
@@ -72,6 +72,22 @@ CloudFront: Dual-origin (S3 static + ALB dynamic)
 ### RDS Database Configuration
 
 <img width="1032" height="609" alt="07-rds-database-config" src="https://github.com/user-attachments/assets/9efd4c57-1798-4ce8-a060-e7e5ef63168d" />
+
+### RDS Database After Multi-AZ enabled
+
+<img width="1586" height="772" alt="07 2-rds-after-multiaz" src="https://github.com/user-attachments/assets/24dd77ca-479b-4e2d-8945-e65cb0d5512d" />
+
+### RDS Before Failover
+
+<img width="659" height="762" alt="07 3-rds-before-failover" src="https://github.com/user-attachments/assets/090f8db1-9295-4609-b1a8-2819c4a14888" />
+
+### RDS rebooting With Failover
+
+<img width="668" height="237" alt="07 4-rds-rebooting-with-failover" src="https://github.com/user-attachments/assets/4a11c8de-97bc-4257-8e3a-21340cdc0ff6" />
+
+### RDS Primary After Failover 
+
+<img width="677" height="767" alt="07 5-rds-primary-after-failover" src="https://github.com/user-attachments/assets/9f57ecb0-d4ce-4d27-99be-daa6ab285228" />
 
 ### Application Load Balancer
 
