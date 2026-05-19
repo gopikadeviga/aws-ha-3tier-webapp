@@ -87,6 +87,8 @@ CloudFront: Dual-origin (S3 static + ALB dynamic)
 
 <img width="668" height="237" alt="07 4-rds-rebooting-with-failover" src="https://github.com/user-attachments/assets/4a11c8de-97bc-4257-8e3a-21340cdc0ff6" />
 
+- Upgraded to Multi-AZ and tested automatic failover by rebooting with failover enabled.
+- 
 ### RDS Primary After Failover 
 
 <img width="677" height="767" alt="07 5-rds-primary-after-failover" src="https://github.com/user-attachments/assets/9f57ecb0-d4ce-4d27-99be-daa6ab285228" />
