@@ -39,7 +39,7 @@ Cloud-Native Highly Available 3-Tier  Web Application - AWS
 VPC CIDR: 10.0.0.0/16 across us-east-1a + us-east-1b
 Subnets: 2 public + 2 private + 2 DB (6 total)
 EC2: t3.micro, Amazon Linux 2023, ASG min2/max4
-RDS: MySQL 8.0, db.t3.micro, automated backups
+RDS: MySQL 8.0, db.t3.micro, automated failover
 ALB: Internet-facing, multi-AZ, ELB health checks
 CloudFront: Dual-origin (S3 static + ALB dynamic)
 
@@ -73,6 +73,8 @@ CloudFront: Dual-origin (S3 static + ALB dynamic)
 
 <img width="1032" height="609" alt="07-rds-database-config" src="https://github.com/user-attachments/assets/9efd4c57-1798-4ce8-a060-e7e5ef63168d" />
 
+## RDS Multi-AZ Upgrade & Failover Test
+
 ### RDS Database After Multi-AZ enabled
 
 <img width="1586" height="772" alt="07 2-rds-after-multiaz" src="https://github.com/user-attachments/assets/24dd77ca-479b-4e2d-8945-e65cb0d5512d" />
@@ -88,6 +90,10 @@ CloudFront: Dual-origin (S3 static + ALB dynamic)
 ### RDS Primary After Failover 
 
 <img width="677" height="767" alt="07 5-rds-primary-after-failover" src="https://github.com/user-attachments/assets/9f57ecb0-d4ce-4d27-99be-daa6ab285228" />
+
+- RDS MySQL 8.0 — Multi-AZ tested with automatic failover. 
+- Primary AZ switched us-east-1a → us-east-1bin under 2 minutes. 
+- RTO < 2 min, RPO = 0.
 
 ### Application Load Balancer
 
