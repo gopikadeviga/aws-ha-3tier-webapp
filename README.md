@@ -2,16 +2,15 @@
 Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 ## LIVE DEMO
->> Portfolio : https://d3d6c6f0oluiq.cloudfront.net
+   Portfolio : https://d3d6c6f0oluiq.cloudfront.net
 
 ## ARCHITECTURE OVERVIEW
->> 3-tier web application deployed on AWS, spanning 2 Availability Zones with auto-healing compute,
+   3-tier web application deployed on AWS, spanning 2 Availability Zones with auto-healing compute,
    managed database, and global CDN delivery.
 
 ## ARCHITECTURE DIAGRAM
 
 <img width="1579" height="671" alt="01-vpc-architecture" src="https://github.com/user-attachments/assets/371f6c58-0590-4bd0-b51d-88e713ffb0ec" />
-
 
 ## AWS SERVICES USED
 
@@ -102,7 +101,7 @@ CloudFront: Dual-origin (S3 static + ALB dynamic)
 
 <img width="1503" height="322" alt="08-alb-details" src="https://github.com/user-attachments/assets/28c79f68-6a00-484f-bd29-7ff1bea4d7cf" />
 
-## WHAT I LEARNED
+## WHAT I LEARNED :
 
 - Designing HA architecture across multiple AZs
 - Difference between ELB and EC2 health checks
