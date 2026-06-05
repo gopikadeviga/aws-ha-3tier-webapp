@@ -1,4 +1,4 @@
-# aws-ha-3tier-webapp
+# AWS-HA-3Tier-WebApp
 Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 ## LIVE DEMO
