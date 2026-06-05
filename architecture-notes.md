@@ -29,7 +29,7 @@
   (more secure, supports all regions)
 - HTTP → HTTPS redirect enforced at edge
 
-  ## Security Design
+## Security Design
 - Security group chaining:
   Internet → ALB (sg-alb)
   ALB → EC2 (sg-app, source: sg-alb)
