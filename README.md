@@ -2,9 +2,11 @@
 Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 ## LIVE DEMO
+
    Portfolio : https://d3d6c6f0oluiq.cloudfront.net
 
 ## ARCHITECTURE OVERVIEW
+
    3-tier web application deployed on AWS, spanning 2 Availability Zones with auto-healing compute,
    managed database, and global CDN delivery.
 
