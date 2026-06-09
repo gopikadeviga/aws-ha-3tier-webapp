@@ -2,7 +2,6 @@
 Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 ## LIVE DEMO
-
    Portfolio : https://d3d6c6f0oluiq.cloudfront.net
 
 ## ARCHITECTURE OVERVIEW
