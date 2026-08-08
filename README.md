@@ -4,7 +4,7 @@ Cloud-Native Highly Available 3-Tier  Web Application - AWS
 ## ARCHITECTURE OVERVIEW
 
    3-tier web application deployed on AWS, spanning 2 Availability Zones with auto-healing compute, managed database, and global CDN delivery.
-
+   
 ## ARCHITECTURAL DIAGRAM
 
 <img width="931" height="826" alt="final-architecture-diagram" src="https://github.com/user-attachments/assets/6a4f9a92-3b2c-4989-bf95-68af04035c6b" />
