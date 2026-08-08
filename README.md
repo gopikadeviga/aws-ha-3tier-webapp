@@ -9,7 +9,6 @@ Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 <img width="931" height="826" alt="final-architecture-diagram" src="https://github.com/user-attachments/assets/6a4f9a92-3b2c-4989-bf95-68af04035c6b" />
 
-
 ## VPC ARCHITECTURE DIAGRAM
 
 <img width="1579" height="671" alt="01-vpc-architecture" src="https://github.com/user-attachments/assets/371f6c58-0590-4bd0-b51d-88e713ffb0ec" />
