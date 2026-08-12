@@ -1,4 +1,5 @@
 # AWS-HA-3Tier-WebApp
+
 Cloud-Native Highly Available 3-Tier  Web Application - AWS
 
 ## ARCHITECTURE OVERVIEW
